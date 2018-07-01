@@ -1,6 +1,9 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
+
 import { HomeComponent } from './home/home.component';
+import { MainNavComponent } from './main-nav/main-nav.component';
+
 import { OwnerSigninComponent } from './owner-signin/owner-signin.component';
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { OwnerSignupComponent } from './owner-signup/owner-signup.component';
@@ -24,4 +27,5 @@ export class AppRoutingModule {
 
 }
 
-export const routingComponents = [HomeComponent,PageNotFoundComponent,OwnerSigninComponent,OwnerSignupComponent]
+export const routingComponents = [HomeComponent,PageNotFoundComponent,OwnerSigninComponent,
+  OwnerSignupComponent,MainNavComponent]
