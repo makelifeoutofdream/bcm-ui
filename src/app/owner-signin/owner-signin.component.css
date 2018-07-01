@@ -21,3 +21,12 @@ text-align: center
   .signin-title{
     font-size: 43px;
   }
+
+  .login-button{
+      background-color:  grey;
+  }
+
+  .signup-button{
+      background-color: white;
+      margin-left: 5%;
+  }
