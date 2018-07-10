@@ -1,32 +1,53 @@
 <div class="signup-form ">
-  <form id="owner_signup_form" class="signup-form" #signUpForm="ngForm"  (ngSubmit)="signUpForm.form.valid && onSubmit()">
-      <p class="signup-title">Sign Up</p>
-      <div class="md-form">
-        <mat-form-field class="signup-full-field">
-          <input matInput placeholder="Name" [(ngModel)]="ownerSignUp.name" name="name" required>
-        </mat-form-field>
-      </div>
+  <form #signUpForm="ngForm" (ngSubmit)="onSubmit(signUpForm)" 
+    id="owner_signup_form" class="signup-form">
+
+    <p class="signup-title">Sign Up</p>
+
     <div class="md-form">
-    <mat-form-field class="signup-full-field">
-      <input matInput placeholder="Mobile No" [(ngModel)]="ownerSignUp.mobileNo" name="mobileNo" required>
-    </mat-form-field>
-  </div>
-  <div class="md-form">
-    <mat-form-field class="signup-full-field">
-      <input matInput placeholder="Password" [(ngModel)]="ownerSignUp.password" name="password" required>
-    </mat-form-field>
-  </div>
-  <div class="md-form">
-    <mat-form-field class="signup-full-field">
-      <input matInput placeholder="Confirm Password" [(ngModel)]="ownerSignUp.confirmPassword" name="confirmPassword" required>
-    </mat-form-field>
-  </div>
-  <div >
-    <button mat-raised-button class="signup-button">SignUp</button>
-    <button mat-raised-button class="signup-cancel-button" routerLink="/signin">Cancel</button>
-  </div>
-  
-   
-  
+      <mat-form-field class="signup-full-field">
+        <input matInput placeholder="Name"
+         #name="ngModel" [(ngModel)]="ownerSignupService.ownerSignup.name"
+          name="name"  autocomplete="off" required>
+      </mat-form-field>
+    </div>
+
+    <div class="md-form">
+      <mat-form-field class="signup-full-field">
+        <input matInput placeholder="Mobile No"
+         #mobileNo="ngModel" [(ngModel)]="ownerSignupService.ownerSignup.mobileNo" name="mobileNo" 
+         autocomplete="off" required>
+      </mat-form-field>
+    </div>
+
+    <div class="md-form">
+      <mat-form-field class="signup-full-field">
+        <input matInput placeholder="Password" 
+        #password="ngModel" [(ngModel)]="ownerSignupService.ownerSignup.password" name="password" 
+        autocomplete="off" required>
+      </mat-form-field>
+    </div>
+
+    <div class="md-form">
+      <mat-form-field class="signup-full-field">
+        <input matInput placeholder="Confirm Password"
+         #confirmPassword="ngModel" [(ngModel)]="ownerSignupService.ownerSignup.confirmPassword"
+          name="confirmPassword" autocomplete="off" required>
+      </mat-form-field>
+    </div>
+
+    <div>
+      <button mat-raised-button class="signup-button" type="submit" [disabled]="!signUpForm.valid">
+          <i class="material-icons">send</i> Submit</button>
+
+      <button mat-raised-button class="signup-cancel-button" type="button"
+      (click)="resetForm(signUpForm)" >
+        <i class="material-icons">
+            refresh
+            </i>Reset</button>
+    </div>
+
+
+
   </form>
-  </div>
+</div>

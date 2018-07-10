@@ -1,6 +1,6 @@
 <div class="signin-form ">
 <form id="owner_signin_form" class="signin-form" #signInForm="ngForm"  (ngSubmit)="signInForm.form.valid && onSubmit()">
-    <p class="signin-title">Sign in</p>
+    <p class="signin-title">Login</p>
   <div class="md-form">
   <mat-form-field class="signin-full-field">
     <input matInput placeholder="Mobile No" [(ngModel)]="ownerSignIn.mobileNo" name="mobileNo" required>
@@ -12,10 +12,16 @@
   </mat-form-field>
 </div>
 <div >
-  <button  mat-raised-button  class="login-button" routerLink="/home">Login</button>
-  <button mat-raised-button class="signup-button" routerLink="/signup">SignUp</button>
+  <button  mat-raised-button  class="login-button" routerLink="/home">
+    <i class="material-icons">
+        power_settings_new
+        </i>Login</button>
+  <button mat-raised-button class="signup-button" routerLink="/signup"><i class="material-icons">
+      how_to_reg
+      </i>Register</button>
 </div>
 </form>
 </div>
+
   
   <router-outlet></router-outlet>

@@ -5,8 +5,9 @@ import { HomeComponent } from './home/home.component';
 import { MainNavComponent } from './main-nav/main-nav.component';
 
 import { OwnerSigninComponent } from './owner-signin/owner-signin.component';
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 import { OwnerSignupComponent } from './owner-signup/owner-signup.component';
+
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
 
 const routes: Routes = [

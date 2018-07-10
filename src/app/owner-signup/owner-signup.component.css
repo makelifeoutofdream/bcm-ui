@@ -10,9 +10,6 @@ text-align: center
   .signup-full-field {
     width: 50%;
     position: relative;
-    text-align: center;
-    
-
   }
 
   .signup-form{
@@ -25,6 +22,9 @@ text-align: center
     font-size: 43px;
   }
 
+  .signup-title{
+    background-color: grey;
+  }
 
   .signup-button{
       background-color: grey;

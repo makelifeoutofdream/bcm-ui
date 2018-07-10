@@ -1,4 +1,4 @@
-export class OwnerSignUp{
+export class OwnerSignup {
     name : string ;
     mobileNo : number;
     password : string;

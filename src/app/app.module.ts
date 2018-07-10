@@ -7,17 +7,27 @@ import { MatFormFieldModule, MatInputModule, MatButtonModule, MatToolbarModule, 
 import { FormsModule } from '@angular/forms';
 import { AppRoutingModule, routingComponents } from './/app-routing.module';
 import { LayoutModule } from '@angular/cdk/layout';
+import { ToastrModule } from 'ngx-toastr';
 
 @NgModule({
   declarations: [
-    AppComponent, 
+    AppComponent,
     routingComponents
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
     MatFormFieldModule,
-    MatInputModule, FormsModule, MatButtonModule, AppRoutingModule, LayoutModule, MatToolbarModule, MatSidenavModule, MatIconModule, MatListModule
+    MatInputModule,
+    FormsModule,
+    MatButtonModule,
+    AppRoutingModule,
+    LayoutModule,
+    MatToolbarModule,
+    MatSidenavModule,
+    MatIconModule,
+    MatListModule,
+    ToastrModule.forRoot()
   ],
   providers: [],
   bootstrap: [AppComponent]
