@@ -8,6 +8,7 @@ import { OwnerSigninComponent } from './owner-signin/owner-signin.component';
 import { OwnerSignupComponent } from './owner-signup/owner-signup.component';
 
 import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ClubInfoComponent } from './club-info/club-info.component';
 
 
 const routes: Routes = [
@@ -15,6 +16,7 @@ const routes: Routes = [
   { path: 'signin', component: OwnerSigninComponent },
   { path: 'home', component: HomeComponent },
   { path: 'signup', component: OwnerSignupComponent},
+  { path: 'clubinfo', component: ClubInfoComponent},
 
 // This  routs object should be always last
   { path: "**", component: PageNotFoundComponent }
@@ -29,4 +31,4 @@ export class AppRoutingModule {
 }
 
 export const routingComponents = [HomeComponent,PageNotFoundComponent,OwnerSigninComponent,
-  OwnerSignupComponent,MainNavComponent]
+  OwnerSignupComponent,MainNavComponent,ClubInfoComponent]

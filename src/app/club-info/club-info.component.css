@@ -1,0 +1,38 @@
+.horizontal-div{
+   
+    margin-left: 2%;
+    flex-direction: column;
+    width:  100%;
+    text-align: left
+}
+/* .horizontal-div > *{
+    width:  100%;
+} */
+.horizontal-div-controls{
+    width: 50%;
+}
+
+.normal-alignment{  
+    margin-left: 2%;
+    width: 100%;
+    text-align: left;
+}
+
+.save-button{
+    background-color: white;
+    margin-left: 5%;
+    float: right;
+    margin-right: 1%;
+}
+
+.cancel-button{
+    background-color: grey;
+    margin-left: 1%;
+    float: right;
+    margin-right: 5%;
+}
+
+.icon-button-info{
+    width: 50%; 
+    text-align: left
+}

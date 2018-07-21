@@ -8,6 +8,7 @@ import { FormsModule } from '@angular/forms';
 import { AppRoutingModule, routingComponents } from './/app-routing.module';
 import { LayoutModule } from '@angular/cdk/layout';
 import { ToastrModule } from 'ngx-toastr';
+import { ClubInfoComponent } from './club-info/club-info.component';
 
 @NgModule({
   declarations: [
