@@ -21,6 +21,7 @@ import { PlayerListComponent } from './players/player-list/player-list.component
 const routes: Routes = [
   { path: '', redirectTo: '/signin', pathMatch: 'full' },//default page
   { path: 'signin', component: OwnerSigninComponent },
+  { path: 'dashboard', component: DashboardComponent},
   { path: 'home', component: HomeComponent },
   { path: 'signup', component: OwnerSignupComponent},
   { path: 'clubinfo', component: ClubInfoComponent},
