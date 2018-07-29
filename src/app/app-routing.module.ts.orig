@@ -7,15 +7,14 @@ import { MainNavComponent } from './main-nav/main-nav.component';
 import { OwnerSigninComponent } from './owner-signin/owner-signin.component';
 import { OwnerSignupComponent } from './owner-signup/owner-signup.component';
 
-import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
 
-import { ClubInfoComponent } from './club-info/club-info.component';
-import { SidebarComponent } from './sidebar/sidebar.component';
-import { DashboardComponent } from './dashboard/dashboard.component';
 
 import { PlayersComponent } from './players/players.component';
 import { PlayerComponent } from './players/player/player.component';
 import { PlayerListComponent } from './players/player-list/player-list.component';
+
+import { PageNotFoundComponent } from './page-not-found/page-not-found.component';
+import { ClubInfoComponent } from './club-info/club-info.component';
 
 
 const routes: Routes = [
@@ -23,8 +22,11 @@ const routes: Routes = [
   { path: 'signin', component: OwnerSigninComponent },
   { path: 'home', component: HomeComponent },
   { path: 'signup', component: OwnerSignupComponent},
+<<<<<<< Updated upstream
   { path: 'clubinfo', component: ClubInfoComponent},
+=======
   { path: 'players', component: PlayersComponent},
+>>>>>>> Stashed changes
 
 // This  routs object should be always last
   { path: "**", component: PageNotFoundComponent }
@@ -38,6 +40,14 @@ export class AppRoutingModule {
 
 }
 
+<<<<<<< Updated upstream
 export const routingComponents = [HomeComponent,PageNotFoundComponent,OwnerSigninComponent,
-  OwnerSignupComponent,MainNavComponent,SidebarComponent,
-  DashboardComponent,ClubInfoComponent,PlayersComponent,PlayerComponent,PlayerListComponent]
+  OwnerSignupComponent,MainNavComponent,ClubInfoComponent]
+=======
+export const routingComponents = [HomeComponent,
+  PageNotFoundComponent
+  ,OwnerSigninComponent,
+  OwnerSignupComponent,
+  MainNavComponent,
+  PlayersComponent,PlayerComponent,PlayerListComponent]
+>>>>>>> Stashed changes
